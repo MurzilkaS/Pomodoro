@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#container{
+    height: 200px;
+    width: 700 px;
+    background-color: rgb(223, 174, 158);
+    margin : 0 auto;
+    border : 5 px ,solid, pink;
+    display: grid;
+    grid-template-columns: repeat(5,1,flex);
+    grid-template-rows: repeat(3,1,flex);
+}
+/*timer*/
+.label{
+    align-self: center;
+    justify-self: center;
+    font-size: 30 px;
+    font-weight: bold;
+
+}
+#work{
+    grid-area: 1/2/1/2;
+    font-size: 60px;
+    color: green; 
+   padding-top: 10%;
+}
+#break{grid-area: 1/4/1/4;
+    font-size: 60px;
+    color: green;  
+    padding-top: 10%;
+
+}
+#cycles{
+grid-area: 1/3/1/3;
+font-size: 60px;
+color: green; 
+
+padding-top: 10%;
+}
+.timer{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    font-size: 60px;
+    font-weight: bold;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+#counter{
+    padding-top: 314px;
+    height: 700px;
+    grid-area: 2/3/2/3;
+    color:red ;
+}
+#work-timer{
+    grid-area: 2/2/2/2;
+    padding: 30px;
+    font-size: 100px;
+    border-radius: 50%;
+    color: black;
+    border: 15px solid #bb7461;
+    height: 350px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#break-timer{
+    grid-area: 2/4/2/4;
+}
+.btn{
+    align-self: center;
+    border-radius: 30%;
+    justify-self: center;
+    width: 120px;
+    height: 60px;
+    font-size: 30px;
+    border-color: blue;
+}
+#start{
+    grid-area: 3/2/3/2;
+}
+#reset{
+    grid-area: 3/3/3/3;
+}
+#stop{
+    grid-area: 3/4/3/4;
+}
